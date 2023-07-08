@@ -1,0 +1,7 @@
+<script>
+    //Peça para o usuário informar o preço original do produto e o preço do produto durante a campanha promocional. Calcule qual foi a porcentagem de desconto dada para o produto na promoção.
+    const precoOriginal = Number(prompt(`Informe o preço original do produto:`).replace(",","."));
+    const promocao = Number(prompt(`Informe o preço do produto durante a promoção:`).replace(",","."));
+    const desconto = (promocao / precoOriginal);
+        alert(`Seu produto teve desconto de ${desconto * 100}% no total`);
+</script>

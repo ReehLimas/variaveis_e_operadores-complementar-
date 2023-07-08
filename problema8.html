@@ -1,0 +1,8 @@
+<script>
+    //Peça para o aluno informar as notas que obteve no PRIMEIRO TRIMESTRE e calcule a média do aluno no primeiro trimestre. Considere que a média é ponderada, e o peso das notas será 2 (dois), 3 (três) e 5 (cinco), respectivamente. Ao final do programa apresente a média trimestral que o aluno obteve.
+    const primeiroTri = Number(prompt(`Informe sua priemeira nota no primeiro trimestre:`).replace(",","."));
+    const segundaTri = Number(prompt(`Informe sua segunda nota do primeiro trimestre:`).replace(",","."));
+    const terceiroTri = Number(prompt(`Informe sua terceira nota no primeiro trimestre:`).replace(",","."));
+    const resultado = (primeiroTri + segundaTri + terceiroTri / 3);
+    alert(`O aluno teve a média ponderada de ${resultado} pontos.`);
+</script>

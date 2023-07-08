@@ -1,0 +1,9 @@
+<script>
+    //Considere que uma revendedora paga a seus funcionários um salário fixo por mês, mais R$ 225,00 para cada carro vendido e, além disso, 5% do valor das vendas efetuadas por ele. Pergunte ao usuário qual o seu salário fixo, quantos carros foram vendidos e o valor total das vendas. Calcule e apresente qual a remuneração final do vendedor, funcionário da revendedora. Também apresente qual será o salário após o desconto de 20% de impostos.
+    const salarioFixo = Number(prompt(`Informe qual o seu salário fixo`).replace(",","."));
+    const carrosVendidos = Number(prompt(`Informe quantos carros foram vendidos:`));
+    const valorVenda = Number(prompt(`Informe o valor total das vendas:`).replace(",","."));
+    const valor = (salarioFixo + 225 * carrosVendidos);
+    const valorMais = (valorVenda * 5/100 + valor);
+    alert(`Seu salário sem impostos será de ${valorMais} reais, adicionando 20% de impostos fica ${valorMais - valorMais * 20/100} reais.`)
+</script>

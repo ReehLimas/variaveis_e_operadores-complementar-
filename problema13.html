@@ -1,0 +1,12 @@
+<script>
+    //Peça para o usuário informar quanto tempo gastou durante a viagem, quantos litros de combustível foram consumidos, o preço do litro de combustível e qual a quilometragem total percorrida. Calcule e apresente os seguintes dados: Velocidade média da viagem em quilômetros por hora, Consumo médio de combustível do veículo, Custo total do combustível, Custo da viagem por quilômetro percorrido
+    const tempo = Number(prompt(`Informe quanto tempo gastou na viagem:`).replace(",","."));
+    const combustivel = Number(prompt(`Informe quantos litros de combustivel gastou durante a viagem:`).replace(",","."));
+    const precoCombustivel = Number(prompt(`Informe o preço do combustivel:`).replace(",","."));
+    const km = Number(prompt(`Informe a quilometragem percorrida:`).replace(",","."));
+    const velocidadeMedia = (km / tempo);
+    const consumoCombustivel = (km / combustivel);
+    const valorCombustivel = (precoCombustivel * combustivel);
+    const valorKm = (valorCombustivel * km);
+    alert(`A velocidade média da viagem foi de ${velocidadeMedia}Km/h, consumo médio do combustível foi de ${consumoCombustivel}, custo total do combustível foi de ${valorCombustivel} e o custo total da viagem foi de ${valorKm} reais.`);
+</script>
